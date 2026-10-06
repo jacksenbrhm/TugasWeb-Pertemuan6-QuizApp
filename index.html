@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <header class="quiz-header">
+      <h1>🧠 Interactive Quiz</h1>
+      <button id="themeToggle" class="icon-btn" aria-label="Ganti tema">🌙</button>
+    </header>
+
+    <!-- Area kuis (disembunyikan saat hasil tampil) -->
+    <div class="quiz-content">
+      <div class="meta">
+        <span id="progress">Soal 1/5</span>
+        <span id="category" class="badge"></span>
+        <span id="timer" class="timer">⏱ 15</span>
+      </div>
+
+      <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+
+      <h2 id="question" class="question"></h2>
+      <div id="options" class="options-grid"></div>
+
+      <button id="nextBtn" class="primary-btn hidden">Next →</button>
+    </div>
+
+    <!-- Hasil akhir -->
+    <div id="result" class="result hidden">
+      <h2>Skor: <span id="score"></span></h2>
+      <p>High Score: <span id="highScore"></span></p>
+      <button id="restartBtn" class="primary-btn">🔄 Ulangi</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
